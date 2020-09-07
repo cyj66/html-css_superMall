@@ -1,0 +1,176 @@
+.main{
+	width: 980px;
+	height: 455px;
+	margin-left: 220px;
+	margin-top: 10px;
+}
+.main .focus{
+	float: left;
+	width: 721px;
+	height: 455px;
+	
+}
+.main .newsflash{
+	float: right;	
+	width: 250px;
+	height: 455px;
+}
+
+.news{
+	height: 165px;       /* 不给宽度,因为和父盒子一样宽 */
+	border:1px solid #e4e4e4;
+}
+.news-hd{
+	height: 33px;
+	border-bottom:1px dotted #e4e4e4;
+	padding:0 15px;
+	line-height: 33px;
+}
+.news-hd h5{
+	float: left;
+	font-size:14px;
+}
+.news-hd .more{
+	float: right;
+}
+.news-hd .more::after{
+	content:'\ea51';
+	font-family: 'icomoon';
+}
+.news-bd ul li{
+	height: 24px;
+	line-height: 24px;
+	overflow:hidden;   /* 文字溢出部分用省略号隐藏 */
+	white-space:nowrap;
+	text-overflow:ellipsis;
+}
+.news-bd{
+	padding:5px 15px 0;
+}
+.lifeservice{
+	overflow: hidden;
+	height: 209px;
+	border:1px solid #e4e4e4;
+	border-top: 0;
+}
+.lifeservice ul{
+	width: 252px;
+}
+.lifeservice ul li{
+	float: left;
+	width: 63px;
+	height: 71px;
+	border-right: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+	text-align: center;
+}
+.lifeservice ul li i{
+	display:inline-block;  /* 转化为行内块元素,利用text-align:center可以实现居中,同时文字也会居中对齐，注意text-align:center要写在其父盒子中 */
+	width:24px;
+	height:28px;
+	backaround-color:pink;
+	margin-top:15px;
+	background:url(../images/icons.png)  no-repeat -19px -15px;
+}
+.bargin{
+	margin-top: 5px;
+}
+
+.recom{
+	height: 163px;
+	margin-top: 12px;
+}
+.recom_hd{
+	float:left;
+	height: 163px;
+	width: 205px;
+	background-color:#5c5251;
+	text-align: center;       /* 图片是行内块元素 */
+	padding-top: 30px;
+}
+.recom_bd{
+	float:left;
+}
+.recom_bd ul li{
+	float:left;
+	position:relative;
+}
+.recom_bd ul li img{    /* 怕用户上传图片大小引起布局混乱直接写死 */
+	width: 248px;
+	height: 163px; 
+}
+.recom_bd ul li::nth-child(-n+3)::after{
+	content:'';
+	position:absolute;
+	right:0;
+	top: 10px;
+	width: 1px;
+	height: 145px;
+	background-color: #ddd;
+}
+
+
+/* 楼层区域 */
+.box_hd{
+	height: 30px;
+	border-bottom: 2px solid #C81623;
+}
+.box_hd h3{
+	float: left;
+	font-size:18px;
+	color:#C81623;
+	font-weight: 400;
+}
+
+.tab_list{
+	float: right;
+	line-height: 30px;	
+}
+.tab_list ul li{
+	float: left;
+}
+.tab_list ul li a{
+	margin:0 15px;
+}
+
+
+.floor .w{
+	margin-top: 30px;
+}
+.box_bd{
+	height: 361px;
+}
+.tab_list_item>div{
+	float: left;
+}
+.col_210{
+	width: 210px;
+	background-color: #f9f9f9;
+	text-align: center;      /* 让里面的所有元素包括图片水平居中 */
+	height: 361px;
+}
+.col_329{
+	width:329px;
+	height: 361px;
+}
+.col_221{
+	width:221px;
+	height: 361px;
+}
+.col_219{
+	width:219px;
+	height: 361px;
+}
+
+.col_210 ul li{
+	float: left;
+	width: 85px;
+	height: 34px;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+	line-height: 34px;
+	margin-left: 10px;
+}
+.col_210 ul{
+	padding-left: 8px;
+}
